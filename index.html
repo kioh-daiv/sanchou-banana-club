@@ -3,441 +3,452 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>山頂バナナクラブ｜2026/6/7 天山登山ご案内</title>
-  <meta name="description" content="2026年6月7日（土）佐賀県・天山（1,046m）登山のご案内。七曲峠 → 東の峰 → 天山 → 雨山（昼食）→ 天山 → 下山。山頂バナナクラブ。">
+  <title>山頂バナナクラブ｜2026年6月7日 天山</title>
+  <meta name="description" content="2026年6月7日（土）天山 登山案内 — 山頂バナナクラブ">
   <style>
     :root {
-      --banana: #FFD93D;
-      --banana-deep: #F4B400;
-      --leaf: #6BCB77;
-      --ink: #2D2A26;
-      --paper: #FFFBEB;
-      --soft: #FFF3C4;
-      --muted: #8A7E66;
-      --line: #E8DCB0;
-      --danger: #E63946;
+      --paper: #FBFAF5;
+      --ink: #1F1B16;
+      --ink-soft: #6A6258;
+      --line: #DDD7C6;
+      --line-dot: #C8C0AC;
+      --accent: #A88323;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
-      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic Medium", "Yu Gothic", sans-serif;
+      font-weight: 400;
       color: var(--ink);
-      line-height: 1.7;
+      background: var(--paper);
+      line-height: 1.9;
+      letter-spacing: 0.03em;
       -webkit-font-smoothing: antialiased;
     }
-    .hero {
-      background: linear-gradient(135deg, var(--banana) 0%, var(--banana-deep) 100%);
-      padding: 48px 24px 56px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
+    .mincho {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "MS Mincho", serif;
     }
-    .hero::before {
-      content: "🍌";
-      position: absolute;
-      font-size: 200px;
-      opacity: 0.08;
-      top: -30px;
-      right: -20px;
-      transform: rotate(-20deg);
-    }
-    .hero-badge {
-      display: inline-block;
-      background: var(--ink);
-      color: var(--banana);
-      font-size: 13px;
-      letter-spacing: 0.15em;
-      padding: 6px 16px;
-      border-radius: 999px;
-      margin-bottom: 16px;
-      font-weight: 700;
-    }
-    .hero h1 {
-      font-size: clamp(28px, 6vw, 42px);
-      margin-bottom: 8px;
-      letter-spacing: -0.01em;
-    }
-    .hero p.date {
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--ink);
-      opacity: 0.85;
-    }
-    .hero p.mountain {
-      margin-top: 12px;
-      font-size: 15px;
-      color: var(--ink);
-      opacity: 0.7;
-    }
-    main {
-      max-width: 720px;
+    .frame {
+      max-width: 620px;
       margin: 0 auto;
-      padding: 0 20px 80px;
+      padding: 72px 32px 96px;
     }
-    section {
-      background: white;
-      border-radius: 16px;
-      padding: 28px 24px;
-      margin-top: 24px;
-      box-shadow: 0 2px 12px rgba(244, 180, 0, 0.08);
-      border: 1px solid var(--line);
-    }
-    h2 {
-      font-size: 20px;
-      margin-bottom: 16px;
+    .club-mark {
+      font-size: 11px;
+      letter-spacing: 0.4em;
+      color: var(--accent);
+      text-align: center;
+      margin-bottom: 56px;
       padding-bottom: 12px;
-      border-bottom: 2px solid var(--banana);
-      display: inline-block;
-      letter-spacing: 0.01em;
     }
-    h3 {
+    .club-mark::after {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--accent);
+      margin: 16px auto 0;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 56px;
+      margin-bottom: 56px;
+      border-bottom: 1px solid var(--ink);
+    }
+    h1 {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 1.5;
+      letter-spacing: 0.08em;
+      margin-bottom: 24px;
+    }
+    .date {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-size: 17px;
+      color: var(--ink-soft);
+      letter-spacing: 0.15em;
+    }
+    .subtitle {
+      font-size: 12px;
+      color: var(--ink-soft);
+      margin-top: 10px;
+      letter-spacing: 0.1em;
+    }
+    section { margin: 56px 0; }
+    h2 {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      letter-spacing: 0.1em;
+      color: var(--ink);
+    }
+    h2 .num {
+      color: var(--accent);
+      margin-right: 14px;
+      font-weight: 400;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--ink);
+      margin-top: 10px;
+    }
+    p {
       font-size: 15px;
-      color: var(--banana-deep);
-      margin-top: 18px;
-      margin-bottom: 8px;
-      font-weight: 700;
+      margin-bottom: 14px;
     }
-    p, li { font-size: 15px; }
-    ul { padding-left: 20px; margin: 8px 0; }
-    li { margin-bottom: 4px; }
+    .lead {
+      font-size: 15px;
+      line-height: 2.05;
+      color: var(--ink);
+    }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin: 12px 0;
       font-size: 14px;
+      margin: 8px 0;
     }
     th, td {
-      padding: 10px 12px;
+      padding: 14px 4px;
       text-align: left;
+      vertical-align: top;
       border-bottom: 1px solid var(--line);
     }
     th {
-      background: var(--soft);
-      font-weight: 700;
-      color: var(--ink);
-    }
-    .timeline-time {
-      font-weight: 700;
-      color: var(--banana-deep);
+      font-weight: 500;
+      color: var(--ink-soft);
+      width: 40%;
+      letter-spacing: 0.05em;
       white-space: nowrap;
+    }
+    .time-col {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
       font-variant-numeric: tabular-nums;
-    }
-    .pill {
-      display: inline-block;
-      background: var(--soft);
-      color: var(--ink);
-      padding: 2px 10px;
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 700;
-      margin-right: 4px;
-    }
-    .pill-car { background: var(--leaf); color: white; }
-    .pill-pickup { background: var(--banana); color: var(--ink); }
-    .pill-family { background: #FF9F9F; color: white; }
-    .alert {
-      background: #FFF5E6;
-      border-left: 4px solid var(--banana-deep);
-      padding: 14px 16px;
-      border-radius: 8px;
-      margin: 14px 0;
+      color: var(--accent);
+      white-space: nowrap;
+      width: 110px;
       font-size: 14px;
     }
-    .alert.warn {
-      background: #FFEBEE;
-      border-left-color: var(--danger);
-    }
-    .alert strong { display: block; margin-bottom: 4px; }
-    .meet-card {
-      display: flex;
-      gap: 14px;
-      align-items: center;
-      padding: 14px;
-      background: var(--soft);
-      border-radius: 12px;
-      margin-bottom: 10px;
-    }
-    .meet-icon { font-size: 28px; }
-    .meet-body { flex: 1; }
-    .meet-place { font-weight: 700; font-size: 16px; }
-    .meet-meta { font-size: 13px; color: var(--muted); margin-top: 2px; }
     .meet-time {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
       font-size: 22px;
-      font-weight: 800;
-      color: var(--banana-deep);
-      font-variant-numeric: tabular-nums;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      display: inline-block;
+      margin-right: 12px;
     }
-    .gear-cols {
+    .meet-sub {
+      display: block;
+      font-size: 12px;
+      color: var(--ink-soft);
+      margin-top: 4px;
+      letter-spacing: 0.03em;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 10px 0;
+      border-bottom: 1px dotted var(--line-dot);
+      font-size: 14px;
+    }
+    ul li:last-child { border-bottom: none; }
+    .two-cols {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 18px;
+      gap: 40px;
     }
-    @media (max-width: 480px) {
-      .gear-cols { grid-template-columns: 1fr; }
-      th, td { padding: 8px 10px; font-size: 13px; }
+    .col-head {
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--ink-soft);
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
     }
-    .link {
-      color: var(--banana-deep);
-      text-decoration: underline;
-      text-underline-offset: 3px;
+    .note {
+      font-size: 13px;
+      color: var(--ink-soft);
+      padding: 18px 0;
+      margin: 24px 0;
+      border-top: 1px dotted var(--line-dot);
+      border-bottom: 1px dotted var(--line-dot);
+      line-height: 1.9;
+    }
+    .note strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1px;
+      transition: border-color 0.15s;
+    }
+    a:hover { border-bottom-color: var(--accent); }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      padding: 28px 0;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      margin: 32px 0;
+    }
+    .summary > div {
+      text-align: center;
+      border-right: 1px solid var(--line);
+    }
+    .summary > div:last-child { border-right: none; }
+    .summary .label {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      color: var(--ink-soft);
+      margin-bottom: 10px;
+    }
+    .summary .value {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-size: 19px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    .summary .unit {
+      font-size: 11px;
+      color: var(--ink-soft);
+      font-weight: 400;
+      margin-left: 1px;
+    }
+    .route {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-size: 14px;
+      line-height: 2.1;
+      padding: 24px 28px;
+      background: white;
+      border: 1px solid var(--line);
+      letter-spacing: 0.05em;
+      color: var(--ink);
+    }
+    .route .head {
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 8px;
+      font-family: -apple-system, "Hiragino Sans", sans-serif;
     }
     footer {
       text-align: center;
-      padding: 32px 20px 40px;
-      color: var(--muted);
-      font-size: 13px;
+      margin-top: 96px;
+      padding-top: 40px;
+      border-top: 1px solid var(--line);
+      font-size: 10px;
+      color: var(--ink-soft);
+      letter-spacing: 0.4em;
     }
-    .footer-banana { font-size: 24px; margin-bottom: 8px; }
-    .summary-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 12px;
-      margin-top: 16px;
+    @media (max-width: 540px) {
+      .frame { padding: 48px 22px 64px; }
+      h1 { font-size: 24px; letter-spacing: 0.05em; }
+      .two-cols { grid-template-columns: 1fr; gap: 28px; }
+      .summary { grid-template-columns: 1fr 1fr; }
+      .summary > div { padding: 14px 0; border-right: none; border-bottom: 1px solid var(--line); }
+      .summary > div:nth-child(2) { border-right: 1px solid var(--line); }
+      .summary > div:nth-child(odd) { border-right: 1px solid var(--line); }
+      .summary > div:nth-last-child(-n+2) { border-bottom: none; }
     }
-    .summary-cell {
-      background: var(--soft);
-      padding: 14px;
-      border-radius: 10px;
-      text-align: center;
-    }
-    .summary-label { font-size: 11px; color: var(--muted); letter-spacing: 0.1em; }
-    .summary-value { font-size: 18px; font-weight: 800; margin-top: 4px; }
   </style>
 </head>
 <body>
 
-<header class="hero">
-  <span class="hero-badge">山頂バナナクラブ</span>
-  <h1>天山 1,046m 登山のご案内</h1>
-  <p class="date">2026年 6月 7日（土）</p>
-  <p class="mountain">佐賀県・天山 ／ 七曲峠登山口ルート</p>
+<div class="frame">
+
+<div class="club-mark">山頂バナナクラブ</div>
+
+<header>
+  <h1>天山 登山のご案内</h1>
+  <p class="date">二〇二六年 六月七日（土）</p>
+  <p class="subtitle">佐賀県・天山 1,046m ／ 七曲峠登山口</p>
 </header>
 
-<main>
+<section>
+  <p class="lead">
+    みなさまお疲れさまです。王琪です。<br>
+    6月7日（土）の天山登山、下記のとおり計画いたしました。<br>
+    途中の東の峰を経由して天山山頂へ、その先の雨山で昼食を取ってから天山経由で下山します。下山後の温泉は、希望者の人数で実施可否を決定します。
+  </p>
 
-  <section>
-    <h2>はじめに</h2>
-    <p>みなさまお疲れさまです。王琪です。<br>
-    6/7（土）の天山登山、下記の通り計画しましたのでご確認ください。<br>
-    途中の<strong>東の峰</strong>を経由して天山山頂へ、その先の<strong>雨山で昼食</strong>を取ってから天山経由で下山します。下山後の温泉はご希望者の人数で決定します。</p>
-
-    <div class="alert">
-      <strong>🗻 ルート</strong>
-      七曲峠 → <strong>東の峰</strong>（通過）→ <strong>天山山頂</strong> → <strong>雨山</strong>（昼食）→ 天山 → 七曲峠
+  <div class="summary">
+    <div>
+      <span class="label">標高</span>
+      <span class="value">1,046<span class="unit">m</span></span>
     </div>
-
-    <div class="summary-grid">
-      <div class="summary-cell">
-        <div class="summary-label">標高</div>
-        <div class="summary-value">1,046m</div>
-      </div>
-      <div class="summary-cell">
-        <div class="summary-label">距離</div>
-        <div class="summary-value">約9km</div>
-      </div>
-      <div class="summary-cell">
-        <div class="summary-label">標高差</div>
-        <div class="summary-value">約615m</div>
-      </div>
-      <div class="summary-cell">
-        <div class="summary-label">行動時間</div>
-        <div class="summary-value">約4.5h</div>
-      </div>
+    <div>
+      <span class="label">距離</span>
+      <span class="value">約9<span class="unit">km</span></span>
     </div>
-  </section>
-
-  <section>
-    <h2>🚗 集合場所・時間</h2>
-
-    <div class="meet-card">
-      <div class="meet-icon">🚉</div>
-      <div class="meet-body">
-        <div class="meet-place">茶山駅</div>
-        <div class="meet-meta">王琪ピックアップ組 ／ 森本さん・古川さん</div>
-      </div>
-      <div class="meet-time">7:00</div>
+    <div>
+      <span class="label">標高差</span>
+      <span class="value">約615<span class="unit">m</span></span>
     </div>
-
-    <div class="meet-card">
-      <div class="meet-icon">⛰️</div>
-      <div class="meet-body">
-        <div class="meet-place">七曲峠登山口</div>
-        <div class="meet-meta">全員集合 ／ <a class="link" href="https://maps.app.goo.gl/c4rHyySeih92Devf6" target="_blank" rel="noopener">Google Maps で開く</a></div>
-      </div>
-      <div class="meet-time">9:00</div>
+    <div>
+      <span class="label">行動時間</span>
+      <span class="value">約4.5<span class="unit">h</span></span>
     </div>
+  </div>
 
-    <div class="alert warn">
-      <strong>⚠️ 駐車場について</strong>
-      七曲峠登山口の駐車スペースは<strong>約10台のみ</strong>。土曜の人気ルートのため、9時頃には満車になる可能性があります。<br>
-      満車だった場合は、近隣の路肩スペース、または天川登山口（車で20-30分）に転戦します。自家用車組（上原さん・倉持さん）は無理せず空きスペースを確認してください。
-    </div>
-  </section>
+  <div class="route">
+    <span class="head">ROUTE</span>
+    七曲峠 → 東の峰（通過） → 天山山頂 → 雨山（昼食） → 天山 → 七曲峠
+  </div>
+</section>
 
-  <section>
-    <h2>👥 参加メンバー</h2>
-    <table>
-      <thead>
-        <tr><th>お名前</th><th>移動</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>上原さん</td><td><span class="pill pill-car">自家用車</span></td></tr>
-        <tr><td>古川さん</td><td><span class="pill pill-pickup">王琪ピックアップ</span></td></tr>
-        <tr><td>森本さん</td><td><span class="pill pill-pickup">王琪ピックアップ</span></td></tr>
-        <tr><td>倉持さん</td><td><span class="pill pill-car">自家用車</span> <span class="pill pill-family">家族連れ</span></td></tr>
-        <tr><td>王琪</td><td><span class="pill pill-car">自家用車</span>（ピックアップ担当）</td></tr>
-      </tbody>
-    </table>
-  </section>
+<section>
+  <h2><span class="num">一、</span>集合</h2>
+  <table>
+    <tr>
+      <th>茶山駅</th>
+      <td>
+        <span class="meet-time">7:00</span>
+        <span class="meet-sub">王琪ピックアップ組：森本さん・古川さん</span>
+      </td>
+    </tr>
+    <tr>
+      <th>七曲峠登山口</th>
+      <td>
+        <span class="meet-time">9:00</span>
+        <span class="meet-sub">全員集合 ／ <a href="https://maps.app.goo.gl/c4rHyySeih92Devf6" target="_blank" rel="noopener">Google Maps</a></span>
+      </td>
+    </tr>
+  </table>
+  <p class="note">
+    <strong>駐車場について。</strong>登山口の駐車スペースは約10台のみです。土曜は満車の可能性があるため、満車時は近隣の路肩、または天川登山口（車で20〜30分）への転戦を検討します。
+  </p>
+</section>
 
-  <section>
-    <h2>🕒 タイムテーブル</h2>
-    <table>
-      <tbody>
-        <tr><td class="timeline-time">7:00</td><td>茶山駅集合（ピックアップ組）</td></tr>
-        <tr><td class="timeline-time">7:15</td><td>茶山駅 出発</td></tr>
-        <tr><td class="timeline-time">8:45頃</td><td>七曲峠登山口 到着・準備</td></tr>
-        <tr><td class="timeline-time">9:00</td><td>🥾 登山開始</td></tr>
-        <tr><td class="timeline-time">10:00頃</td><td>🏔️ 東の峰 通過</td></tr>
-        <tr><td class="timeline-time">11:00</td><td>🏔️ 天山山頂 到着</td></tr>
-        <tr><td class="timeline-time">11:30</td><td>🏔️ 雨山 到着</td></tr>
-        <tr><td class="timeline-time">11:30–12:15</td><td>🍙 昼食（雨山）</td></tr>
-        <tr><td class="timeline-time">12:15</td><td>雨山 出発</td></tr>
-        <tr><td class="timeline-time">12:45</td><td>天山山頂 通過</td></tr>
-        <tr><td class="timeline-time">13:45</td><td>七曲峠登山口 下山完了</td></tr>
-        <tr><td class="timeline-time" colspan="2" style="background: var(--soft); text-align: center; font-style: italic; color: var(--banana-deep);">― ここから先は希望者のみ ―</td></tr>
-        <tr><td class="timeline-time">14:30頃</td><td>♨️ 古湯・熊の川温泉郷 到着</td></tr>
-        <tr><td class="timeline-time">14:30–16:00</td><td>温泉・休憩</td></tr>
-        <tr><td class="timeline-time">16:00頃</td><td>現地解散</td></tr>
-      </tbody>
-    </table>
-    <p style="font-size: 13px; color: var(--muted); margin-top: 8px;">※ ペースや天候により前後します。当日柔軟に調整します。下山後の温泉は<strong>希望者の人数で実施可否を決定</strong>します。</p>
+<section>
+  <h2><span class="num">二、</span>参加者</h2>
+  <table>
+    <tr><th>上原さん</th><td>自家用車</td></tr>
+    <tr><th>古川さん</th><td>王琪ピックアップ</td></tr>
+    <tr><th>森本さん</th><td>王琪ピックアップ</td></tr>
+    <tr><th>倉持さん</th><td>自家用車（家族連れ）</td></tr>
+    <tr><th>王琪</th><td>自家用車（ピックアップ担当）</td></tr>
+  </table>
+</section>
 
-    <div class="alert">
-      <strong>👨‍👩‍👧 倉持さんファミリーへ</strong>
-      お子さまの体力次第で、雨山までの寄り道（天山往復＋30分）はスキップ可能です。天山山頂で待機 → 合流してから一緒に下山もOK。ご希望をお聞かせください。
-    </div>
-  </section>
+<section>
+  <h2><span class="num">三、</span>行程</h2>
+  <table>
+    <tr><td class="time-col">7:00</td><td>茶山駅集合（ピックアップ組）</td></tr>
+    <tr><td class="time-col">7:15</td><td>茶山駅 出発</td></tr>
+    <tr><td class="time-col">8:45頃</td><td>七曲峠登山口 到着・準備</td></tr>
+    <tr><td class="time-col">9:00</td><td>登山開始</td></tr>
+    <tr><td class="time-col">10:00頃</td><td>東の峰 通過</td></tr>
+    <tr><td class="time-col">11:00</td><td>天山山頂 到着</td></tr>
+    <tr><td class="time-col">11:30</td><td>雨山 到着</td></tr>
+    <tr><td class="time-col">11:30–12:15</td><td>昼食（雨山）</td></tr>
+    <tr><td class="time-col">12:15</td><td>雨山 出発</td></tr>
+    <tr><td class="time-col">12:45</td><td>天山山頂 通過</td></tr>
+    <tr><td class="time-col">13:45</td><td>七曲峠登山口 下山完了</td></tr>
+  </table>
+  <p class="note">
+    ※ ペース・天候により前後します。<br>
+    <strong>倉持さんファミリーへ。</strong>お子さまの体力次第で、雨山までの寄り道（天山往復＋30分）はスキップ可能です。天山山頂で待機 → 合流して一緒に下山もできますので、ご希望をお聞かせください。
+  </p>
+</section>
 
-  <section>
-    <h2>♨️ 下山後の温泉（オプション）</h2>
-    <p>下山後、車で約30分の<strong>古湯・熊の川温泉郷</strong>で日帰り温泉に立ち寄るオプションあり。体温に近い「ぬる湯」が特徴で、登山後の体にぴったり。</p>
+<section>
+  <h2><span class="num">四、</span>下山後の温泉（希望者のみ）</h2>
+  <p>下山後、車で約30分の古湯・熊の川温泉郷で日帰り温泉に立ち寄るオプションをご用意しています。体温に近い「ぬる湯」が登山後の体にやさしいです。</p>
+  <p class="note">
+    <strong>ご希望の方は王琪まで「温泉行きたい」とご連絡ください。</strong>人数で実施可否を決定します。温泉なしの場合は、下山後14時頃に登山口で解散とします。
+  </p>
+  <div class="col-head" style="margin-top: 28px;">候補施設（実施時・当日相談で決定）</div>
+  <ul>
+    <li>古湯温泉 ONCRI（おんくり）— モダンで快適、日帰り入浴対応</li>
+    <li>熊の川温泉 ちどりの湯 — 気軽な日帰り温泉施設、家族連れも安心</li>
+    <li>古湯温泉 英龍温泉 — 街湯スタイル、リーズナブル</li>
+  </ul>
+</section>
 
-    <div class="alert warn">
-      <strong>🙋 温泉ご希望の方は事前にお知らせください</strong>
-      参加希望者の人数で実施可否を決定します。ご希望の方は王琪まで「温泉行きたい」とご連絡ください。<br>
-      <strong>温泉なしの場合は</strong>下山後（14時頃）に登山口で解散します。
-    </div>
-
-    <h3>候補施設（実施する場合・当日相談で決定）</h3>
-    <ul>
-      <li><strong>古湯温泉 ONCRI / おんくり</strong> — モダンで快適、日帰り入浴対応</li>
-      <li><strong>熊の川温泉 ちどりの湯</strong> — 気軽な日帰り温泉施設、家族連れも安心</li>
-      <li><strong>古湯温泉 英龍温泉</strong> — 街湯スタイル、リーズナブル</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>🎒 持ち物リスト</h2>
-
-    <div class="gear-cols">
-      <div>
-        <h3>必須</h3>
-        <ul>
-          <li>ザック（20–30L）</li>
-          <li>登山靴（トレッキングシューズ以上）</li>
-          <li>雨具（上下セパレートのレインウェア）</li>
-          <li>水 1.5L以上</li>
-          <li>行動食（おにぎり・チョコ・バー類）</li>
-          <li>昼食（山頂で食べる用）</li>
-          <li>ヘッドライト＋予備電池</li>
-          <li>防寒着（薄手フリース等）</li>
-          <li>帽子</li>
-          <li>健康保険証コピー</li>
-          <li>ゴミ袋</li>
-          <li>温泉セット（タオル・着替え）</li>
-        </ul>
-      </div>
-      <div>
-        <h3>推奨</h3>
-        <ul>
-          <li><strong>虫除けスプレー</strong>（6月はアブ対策必須）</li>
-          <li>日焼け止め</li>
-          <li>速乾タオル</li>
-          <li>トレッキングポール</li>
-          <li>救急セット（絆創膏・テーピング）</li>
-          <li>モバイルバッテリー</li>
-        </ul>
-
-        <h3>服装の目安</h3>
-        <ul>
-          <li>長袖シャツ＋速乾Tシャツ</li>
-          <li>登山用パンツ（長ズボン推奨）</li>
-          <li>山頂は風で体感5℃下がります</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>🌧️ 雨天時の判断</h2>
-    <table>
-      <tbody>
-        <tr>
-          <th>判断時刻</th>
-          <td><strong>前日（6/6）21:00</strong> までに王琪からLINEで連絡</td>
-        </tr>
-        <tr>
-          <th>中止基準</th>
-          <td>降水確率 <strong>50%以上</strong> ／ 雷注意報・大雨警報級</td>
-        </tr>
-        <tr>
-          <th>決行基準</th>
-          <td>降水確率 20–40% は決行（雨具携行）</td>
-        </tr>
-        <tr>
-          <th>当日朝の急変</th>
-          <td>7:00時点で大雨なら茶山駅で解散判断</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section>
-    <h2>📞 緊急連絡先・登山届</h2>
-    <ul>
-      <li><strong>主催：王琪</strong>（当日連絡はLINEグループへ）</li>
-      <li><strong>登山口住所：</strong>佐賀県佐賀市富士町大字市川</li>
-      <li><strong>登山届：</strong>主催者がコンパス（オンライン登山届）で提出します</li>
-    </ul>
-
-    <div class="alert">
-      <strong>📋 事前にご確認ください</strong>
-      <ul style="margin-top: 6px;">
-        <li>参加可否（変更があれば6/5までに）</li>
-        <li>装備の有無（不足品があれば事前相談）</li>
-        <li>体調・持病・アレルギー（緊急時の共有のため）</li>
+<section>
+  <h2><span class="num">五、</span>持ち物</h2>
+  <div class="two-cols">
+    <div>
+      <div class="col-head">必須</div>
+      <ul>
+        <li>ザック（20–30L）</li>
+        <li>登山靴（トレッキングシューズ以上）</li>
+        <li>雨具（上下セパレート）</li>
+        <li>水 1.5L以上</li>
+        <li>行動食</li>
+        <li>昼食</li>
+        <li>ヘッドライト＋予備電池</li>
+        <li>防寒着（薄手フリース等）</li>
+        <li>帽子</li>
+        <li>健康保険証コピー</li>
+        <li>ゴミ袋</li>
       </ul>
     </div>
-  </section>
+    <div>
+      <div class="col-head">推奨</div>
+      <ul>
+        <li>虫除けスプレー（6月はアブ対策必須）</li>
+        <li>日焼け止め</li>
+        <li>速乾タオル</li>
+        <li>トレッキングポール</li>
+        <li>救急セット</li>
+        <li>モバイルバッテリー</li>
+        <li>温泉セット（参加者のみ）</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  <section>
-    <h2>📚 参考リンク</h2>
-    <ul>
-      <li><a class="link" href="https://yamap.com/mountains/2" target="_blank" rel="noopener">天山｜YAMAP</a></li>
-      <li><a class="link" href="https://yamap.com/model-courses/8914" target="_blank" rel="noopener">七曲峠-天山 往復コース</a></li>
-      <li><a class="link" href="https://tozanguchi-p.com/tenzan_7/" target="_blank" rel="noopener">七曲峠登山口 駐車場ガイド</a></li>
-      <li><a class="link" href="https://www.fuji-spa.com/onsen/" target="_blank" rel="noopener">古湯・熊の川温泉 立ち寄り湯</a></li>
-    </ul>
-  </section>
+<section>
+  <h2><span class="num">六、</span>雨天時の判断</h2>
+  <table>
+    <tr><th>判断時刻</th><td>前日（6/6）21:00までに王琪からLINEで連絡</td></tr>
+    <tr><th>中止基準</th><td>降水確率 50%以上 ／ 雷注意報・大雨警報級</td></tr>
+    <tr><th>決行基準</th><td>降水確率 20〜40% は決行（雨具携行）</td></tr>
+    <tr><th>当日朝の急変</th><td>7:00時点で大雨なら茶山駅で解散判断</td></tr>
+  </table>
+</section>
 
-</main>
+<section>
+  <h2><span class="num">七、</span>連絡先・その他</h2>
+  <table>
+    <tr><th>主催</th><td>王琪（当日連絡はLINEグループへ）</td></tr>
+    <tr><th>登山口住所</th><td>佐賀県佐賀市富士町大字市川</td></tr>
+    <tr><th>登山届</th><td>主催者がコンパスで提出</td></tr>
+  </table>
+  <p class="note">
+    <strong>事前にご確認いただきたいこと。</strong>参加可否・温泉希望（6/5まで）／装備の不足の有無／体調・持病・アレルギー（緊急時共有のため）
+  </p>
+</section>
+
+<section>
+  <h2><span class="num">八、</span>参考</h2>
+  <ul>
+    <li><a href="https://yamap.com/mountains/2" target="_blank" rel="noopener">天山｜YAMAP</a></li>
+    <li><a href="https://yamap.com/model-courses/8914" target="_blank" rel="noopener">七曲峠-天山 往復コース</a></li>
+    <li><a href="https://tozanguchi-p.com/tenzan_7/" target="_blank" rel="noopener">七曲峠登山口 駐車場ガイド</a></li>
+    <li><a href="https://www.fuji-spa.com/onsen/" target="_blank" rel="noopener">古湯・熊の川温泉 立ち寄り湯</a></li>
+  </ul>
+</section>
 
 <footer>
-  <div class="footer-banana">🍌</div>
-  <div><strong>山頂バナナクラブ</strong></div>
-  <div>Summit Banana Club ／ Since 2026</div>
+  山頂バナナクラブ
 </footer>
+
+</div>
 
 </body>
 </html>
