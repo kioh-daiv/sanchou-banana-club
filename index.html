@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>山頂バナナクラブ｜2026年7月19日 黒髪山</title>
-  <meta name="description" content="2026年7月19日（日）黒髪山 登山案内 — 山頂バナナクラブ">
+  <title>山頂バナナクラブ｜登山案内一覧</title>
+  <meta name="description" content="山頂バナナクラブ 登山案内一覧">
   <style>
     :root {
       --paper: #FBFAF5;
@@ -28,428 +28,100 @@
     .mincho {
       font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "MS Mincho", serif;
     }
-    .frame {
-      max-width: 620px;
+    .wrap {
+      max-width: 640px;
       margin: 0 auto;
-      padding: 72px 32px 96px;
-    }
-    .club-mark {
-      font-size: 11px;
-      letter-spacing: 0.4em;
-      color: var(--accent);
-      text-align: center;
-      margin-bottom: 56px;
-      padding-bottom: 12px;
-    }
-    .club-mark::after {
-      content: "";
-      display: block;
-      width: 24px;
-      height: 1px;
-      background: var(--accent);
-      margin: 16px auto 0;
+      padding: 4rem 1.5rem 6rem;
     }
     header {
       text-align: center;
-      padding-bottom: 56px;
-      margin-bottom: 56px;
-      border-bottom: 1px solid var(--ink);
+      margin-bottom: 3.5rem;
     }
-    h1 {
-      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
-      font-weight: 600;
-      font-size: 30px;
-      line-height: 1.5;
-      letter-spacing: 0.08em;
-      margin-bottom: 24px;
-    }
-    .date {
-      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
-      font-size: 17px;
+    header .club {
+      font-size: 0.85rem;
+      letter-spacing: 0.25em;
       color: var(--ink-soft);
-      letter-spacing: 0.15em;
+      margin-bottom: 0.5rem;
     }
-    .subtitle {
-      font-size: 12px;
-      color: var(--ink-soft);
-      margin-top: 10px;
-      letter-spacing: 0.1em;
-    }
-    section { margin: 56px 0; }
-    h2 {
-      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
-      font-size: 17px;
-      font-weight: 600;
-      margin-bottom: 24px;
-      letter-spacing: 0.1em;
-      color: var(--ink);
-    }
-    h2 .num {
-      color: var(--accent);
-      margin-right: 14px;
-      font-weight: 400;
-    }
-    h2::after {
-      content: "";
-      display: block;
-      width: 32px;
-      height: 1px;
-      background: var(--ink);
-      margin-top: 10px;
-    }
-    p {
-      font-size: 15px;
-      margin-bottom: 14px;
-    }
-    .lead {
-      font-size: 15px;
-      line-height: 2.05;
-      color: var(--ink);
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14px;
-      margin: 8px 0;
-    }
-    th, td {
-      padding: 14px 4px;
-      text-align: left;
-      vertical-align: top;
-      border-bottom: 1px solid var(--line);
-    }
-    th {
+    header h1 {
+      font-size: 1.6rem;
       font-weight: 500;
-      color: var(--ink-soft);
-      width: 40%;
-      letter-spacing: 0.05em;
-      white-space: nowrap;
+      letter-spacing: 0.1em;
     }
-    .time-col {
-      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
-      font-variant-numeric: tabular-nums;
-      color: var(--accent);
-      white-space: nowrap;
-      width: 110px;
-      font-size: 14px;
+    header .rule {
+      width: 48px;
+      height: 1px;
+      background: var(--accent);
+      margin: 1.25rem auto 0;
     }
-    .meet-time {
-      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
-      font-size: 22px;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      color: var(--ink);
-      display: inline-block;
-      margin-right: 12px;
-    }
-    .meet-sub {
-      display: block;
-      font-size: 12px;
-      color: var(--ink-soft);
-      margin-top: 4px;
-      letter-spacing: 0.03em;
-    }
-    ul {
+    ul.events {
       list-style: none;
-      padding: 0;
     }
-    ul li {
-      padding: 10px 0;
-      border-bottom: 1px dotted var(--line-dot);
-      font-size: 14px;
+    ul.events li + li {
+      margin-top: 1.25rem;
     }
-    ul li:last-child { border-bottom: none; }
-    .two-cols {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-    }
-    .col-head {
-      font-size: 11px;
-      letter-spacing: 0.25em;
-      color: var(--ink-soft);
-      margin-bottom: 8px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--line);
-    }
-    .note {
-      font-size: 13px;
-      color: var(--ink-soft);
-      padding: 18px 0;
-      margin: 24px 0;
-      border-top: 1px dotted var(--line-dot);
-      border-bottom: 1px dotted var(--line-dot);
-      line-height: 1.9;
-    }
-    .note strong {
-      color: var(--ink);
-      font-weight: 600;
-    }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--line);
-      padding-bottom: 1px;
-      transition: border-color 0.15s;
-    }
-    a:hover { border-bottom-color: var(--accent); }
-    .summary {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 0;
-      padding: 28px 0;
-      border-top: 1px solid var(--ink);
-      border-bottom: 1px solid var(--ink);
-      margin: 32px 0;
-    }
-    .summary > div {
-      text-align: center;
-      border-right: 1px solid var(--line);
-    }
-    .summary > div:last-child { border-right: none; }
-    .summary .label {
+    ul.events a {
       display: block;
-      font-size: 10px;
-      letter-spacing: 0.25em;
-      color: var(--ink-soft);
-      margin-bottom: 10px;
-    }
-    .summary .value {
-      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
-      font-size: 19px;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-    }
-    .summary .unit {
-      font-size: 11px;
-      color: var(--ink-soft);
-      font-weight: 400;
-      margin-left: 1px;
-    }
-    .route {
-      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
-      font-size: 14px;
-      line-height: 2.1;
-      padding: 24px 28px;
-      background: white;
+      padding: 1.5rem 1.75rem;
       border: 1px solid var(--line);
-      letter-spacing: 0.05em;
-      color: var(--ink);
+      background: #fff;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s ease;
     }
-    .route .head {
-      font-size: 11px;
-      letter-spacing: 0.25em;
-      color: var(--accent);
-      display: block;
-      margin-bottom: 8px;
-      font-family: -apple-system, "Hiragino Sans", sans-serif;
+    ul.events a:hover {
+      border-color: var(--accent);
+    }
+    .event-date {
+      font-size: 0.8rem;
+      color: var(--ink-soft);
+      letter-spacing: 0.08em;
+      margin-bottom: 0.35rem;
+    }
+    .event-name {
+      font-size: 1.15rem;
+      font-weight: 500;
+    }
+    .event-note {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+      margin-top: 0.4rem;
     }
     footer {
       text-align: center;
-      margin-top: 96px;
-      padding-top: 40px;
-      border-top: 1px solid var(--line);
-      font-size: 10px;
+      margin-top: 4rem;
+      font-size: 0.75rem;
       color: var(--ink-soft);
-      letter-spacing: 0.4em;
-    }
-    @media (max-width: 540px) {
-      .frame { padding: 48px 22px 64px; }
-      h1 { font-size: 24px; letter-spacing: 0.05em; }
-      .two-cols { grid-template-columns: 1fr; gap: 28px; }
-      .summary { grid-template-columns: 1fr 1fr; }
-      .summary > div { padding: 14px 0; border-right: none; border-bottom: 1px solid var(--line); }
-      .summary > div:nth-child(2) { border-right: 1px solid var(--line); }
-      .summary > div:nth-child(odd) { border-right: 1px solid var(--line); }
-      .summary > div:nth-last-child(-n+2) { border-bottom: none; }
+      letter-spacing: 0.1em;
     }
   </style>
 </head>
 <body>
+  <div class="wrap">
+    <header>
+      <div class="club mincho">山頂バナナクラブ</div>
+      <h1 class="mincho">登山案内一覧</h1>
+      <div class="rule"></div>
+    </header>
 
-<div class="frame">
+    <ul class="events">
+      <li>
+        <a href="kurokamiyama/">
+          <div class="event-date">2026年7月19日（日）</div>
+          <div class="event-name mincho">黒髪山（中級コース・竜門コース）</div>
+          <div class="event-note">龍水亭にて昼食 13:00 / 武雄温泉</div>
+        </a>
+      </li>
+      <li>
+        <a href="tenzan/">
+          <div class="event-date">2026年6月7日（日）</div>
+          <div class="event-name mincho">天山</div>
+          <div class="event-note">開催済み</div>
+        </a>
+      </li>
+    </ul>
 
-<div class="club-mark">山頂バナナクラブ</div>
-
-<header>
-  <h1>黒髪山 登山のご案内</h1>
-  <p class="date">二〇二六年 七月十九日（日）</p>
-  <p class="subtitle">佐賀県・黒髪山 516m ／ 竜門ダム林間駐車場（中級コース）</p>
-</header>
-
-<section>
-  <p class="lead">
-    みなさまお疲れさまです。24期のおうです。<br>
-    7月19日（日）、佐賀の名峰 黒髪山（くろかみやま）に登ります。<br>
-    今回は竜門ダム（りゅうもんダム）から入る<strong>中級コース</strong>。標高は516mと低山ながら、山頂の天童岩（てんどういわ）は鎖・はしご・ロープを使う本格的な岩場で、てっぺんからは360°の絶景が広がります。下山後は竜門峡の川魚料理「龍水亭（りゅうすいてい）」で鯉・うなぎの昼食、希望者は武雄温泉（たけおおんせん）にも立ち寄ります。
-  </p>
-
-  <div class="summary">
-    <div>
-      <span class="label">標高</span>
-      <span class="value">516<span class="unit">m</span></span>
-    </div>
-    <div>
-      <span class="label">距離</span>
-      <span class="value">約5<span class="unit">km</span></span>
-    </div>
-    <div>
-      <span class="label">標高差</span>
-      <span class="value">約400<span class="unit">m</span></span>
-    </div>
-    <div>
-      <span class="label">行動時間</span>
-      <span class="value">約4.5<span class="unit">h</span></span>
-    </div>
+    <footer>山頂バナナクラブ</footer>
   </div>
-
-  <div class="route">
-    <span class="head">ROUTE（中級コース・往復）</span>
-    竜門ダム林間駐車場 → 竜門峡 → 見返峠 → 雄岩展望台 → 雌岩 → 黒髪神社・白山神社 → 黒髪山山頂・天童岩 →（往路を戻る）→ 竜門ダム林間駐車場
-  </div>
-</section>
-
-<section>
-  <h2><span class="num">一、</span>集合</h2>
-  <table>
-    <tr>
-      <th>竜門ダム林間駐車場</th>
-      <td>
-        <span class="meet-time">7:50</span>
-        <span class="meet-sub">全員現地集合・準備 ／ <a href="https://www.google.com/maps/search/%E7%AB%9C%E9%96%80%E3%83%80%E3%83%A0%E6%9E%97%E9%96%93%E9%A7%90%E8%BB%8A%E5%A0%B4" target="_blank" rel="noopener">Google Maps</a></span>
-      </td>
-    </tr>
-  </table>
-  <p class="note">
-    <strong>駐車場は約70台と広め</strong>、台数の心配はありません。カーナビは「竜門ダム」または「竜門峡」で検索してください。長崎自動車道 武雄北方IC（たけおきたがたIC）から約25分です。福岡方面からの相乗りを希望される方はおうまでご連絡ください（人数を見て調整します）。
-  </p>
-</section>
-
-<section>
-  <h2><span class="num">二、</span>参加者</h2>
-  <p>ただいま<strong>参加者募集中</strong>です。参加ご希望の方は、下記「事前にご確認いただきたいこと」をあわせてLINEにておうまでご連絡ください。確定し次第、本欄に参加者・配車を反映します。</p>
-  <table>
-    <tr><th>おう</th><td>主催・自家用車</td></tr>
-    <tr><th>（募集中）</th><td>— </td></tr>
-  </table>
-</section>
-
-<section>
-  <h2><span class="num">三、</span>行程</h2>
-  <table>
-    <tr><td class="time-col">7:50</td><td>竜門ダム林間駐車場 集合・準備</td></tr>
-    <tr><td class="time-col">8:10</td><td>登山開始（竜門峡へ）</td></tr>
-    <tr><td class="time-col">8:50頃</td><td>見返峠</td></tr>
-    <tr><td class="time-col">9:30頃</td><td>雄岩展望台</td></tr>
-    <tr><td class="time-col">10:00頃</td><td>雌岩</td></tr>
-    <tr><td class="time-col">10:15頃</td><td>黒髪神社・白山神社</td></tr>
-    <tr><td class="time-col">10:25頃</td><td>黒髪山山頂・天童岩（鎖場／360°絶景・小休止）</td></tr>
-    <tr><td class="time-col">10:45</td><td>下山開始（往路を戻る）</td></tr>
-    <tr><td class="time-col">12:45頃</td><td>竜門ダム林間駐車場 下山完了</td></tr>
-    <tr><td class="time-col">13:00</td><td>龍水亭 着・昼食（要予約）</td></tr>
-    <tr><td class="time-col">14:15頃</td><td>食事終了・<strong>正式解散</strong></td></tr>
-    <tr><td class="time-col">～15:45</td><td>武雄温泉（希望者のみ・自由解散）</td></tr>
-  </table>
-  <p class="note">
-    ※ ペース・天候・天童岩の鎖場の混雑により前後します。<br>
-    <strong>山頂での昼食は取りません</strong>（龍水亭で食べます）。山行中は行動食・軽食・水を必ず持参してください。<br>
-    <strong>天童岩は黒髪山最大の難関</strong>。鎖・はしご・ロープを使う岩場です。高度感が苦手な方は山頂直下で待機もできますので、無理はしないでください。
-  </p>
-</section>
-
-<section>
-  <h2><span class="num">四、</span>下山後の昼食（全員）・温泉（希望者のみ）</h2>
-  <div class="col-head">昼食：竜門峡「龍水亭（りゅうすいてい）」</div>
-  <p>下山口のすぐ近く、竜門峡の川魚料理店「龍水亭」で昼食をとります。創業大正10年、鯉こく・鯉のあらい・うなぎが名物で、ミシュランガイド（福岡・佐賀・長崎 2019）ビブグルマン掲載店です。鯉定食・うなぎ定食のほか、コース料理もあります。</p>
-  <p class="note">
-    <strong>人気店のため要予約</strong>（日曜は混雑）。<strong>13:00で予約</strong>するため、<strong>下山は12:45目標</strong>で進行します。参加人数が固まり次第、おうが予約します。<br>
-    定休：火・水（日曜は営業）／ TEL 0955-46-2155
-  </p>
-  <div class="col-head" style="margin-top: 28px;">温泉（希望者のみ、龍水亭から車約25分）</div>
-  <p>食後、武雄温泉の共同浴場に立ち寄るオプションです。1300年の歴史をもつ弱アルカリ性の名湯。龍水亭から武雄温泉街までは車で約25分です。</p>
-  <p class="note">
-    <strong>ご希望の方はおうまで「温泉行きたい」とご連絡ください。</strong>正式解散は龍水亭の食後（14:15頃）とし、温泉は希望者のみ自由参加・現地で自由解散とします。温泉まで入っても16:00頃には解散できます。
-  </p>
-  <ul>
-    <li>武雄温泉 鷺乃湯（さぎのゆ）— 露天風呂＋サウナあり・大人740円（一番設備充実）</li>
-    <li>武雄温泉 元湯（もとゆ）— 1876年築の木造レトロ・大人500円</li>
-    <li>武雄温泉 蓬莱湯（ほうらいゆ）— タイル張りでシンプル・清潔・大人500円</li>
-  </ul>
-</section>
-
-<section>
-  <h2><span class="num">五、</span>持ち物</h2>
-  <div class="two-cols">
-    <div>
-      <div class="col-head">必須</div>
-      <ul>
-        <li>ザック（20–30L）</li>
-        <li>登山靴（トレッキングシューズ以上）</li>
-        <li>グローブ（鎖場用・必須）</li>
-        <li>雨具（上下セパレート）</li>
-        <li>水 1.5L以上</li>
-        <li>行動食・軽食（山頂は昼食なし）</li>
-        <li>帽子</li>
-        <li>健康保険証コピー</li>
-        <li>ゴミ袋</li>
-      </ul>
-    </div>
-    <div>
-      <div class="col-head">推奨</div>
-      <ul>
-        <li>虫除けスプレー（7月はアブ・蚊対策必須）</li>
-        <li>日焼け止め</li>
-        <li>塩分タブレット・経口補水液（熱中症対策）</li>
-        <li>速乾タオル</li>
-        <li>トレッキングポール</li>
-        <li>救急セット</li>
-        <li>モバイルバッテリー</li>
-        <li>温泉セット（希望者のみ）</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2><span class="num">六、</span>雨天時の判断</h2>
-  <table>
-    <tr><th>判断時刻</th><td>前日（7/18）21:00までにおうからLINEで連絡</td></tr>
-    <tr><th>中止基準</th><td>降水確率 50%以上 ／ 雷注意報・大雨警報級 ／ <strong>前夜～当朝に雨（岩場が滑り危険）</strong></td></tr>
-    <tr><th>決行基準</th><td>降水確率 20〜30% かつ岩場が乾いていれば決行（雨具携行）</td></tr>
-    <tr><th>当日朝の急変</th><td>7:50時点で雨なら駐車場で中止・解散判断</td></tr>
-  </table>
-  <p class="note">
-    <strong>黒髪山は岩場が主役のため、雨判断は天山より厳しめにします。</strong>濡れた天童岩の鎖場は非常に危険です。微妙な天気のときは安全側に倒します。
-  </p>
-</section>
-
-<section>
-  <h2><span class="num">七、</span>連絡先・その他</h2>
-  <table>
-    <tr><th>主催</th><td>おう（当日連絡はLINEグループへ）</td></tr>
-    <tr><th>集合場所</th><td>佐賀県有田町 竜門ダム林間駐車場</td></tr>
-    <tr><th>登山届</th><td>主催者がコンパスで提出</td></tr>
-  </table>
-  <p class="note">
-    <strong>事前にご確認いただきたいこと（7/13まで）。</strong>参加可否／相乗り希望の有無／温泉希望の有無／龍水亭で食べたいもの（鯉・うなぎ等）／装備の不足の有無／体調・持病・アレルギー（緊急時共有のため）
-  </p>
-</section>
-
-<section>
-  <h2><span class="num">八、</span>参考</h2>
-  <ul>
-    <li><a href="https://sagamichi.jp/kurokamiyama/" target="_blank" rel="noopener">黒髪山 登山コース案内（中級コース）｜さがみち</a></li>
-    <li><a href="https://yamap.com/mountains/11676" target="_blank" rel="noopener">黒髪山｜YAMAP</a></li>
-    <li><a href="https://ryusuitei.jp/" target="_blank" rel="noopener">川魚料理 龍水亭（有田町・竜門峡）</a></li>
-    <li><a href="https://www.takeo-kk.net/spa/001333.php" target="_blank" rel="noopener">武雄温泉 鷺乃湯</a></li>
-  </ul>
-</section>
-
-<footer>
-  山頂バナナクラブ
-</footer>
-
-</div>
-
 </body>
 </html>
