@@ -270,6 +270,55 @@
       border-top: 1px solid var(--line);
       letter-spacing: 0.03em;
     }
+    .spots { margin-top: 8px; }
+    .spots li {
+      padding: 18px 0;
+      border-bottom: 1px dotted var(--line-dot);
+    }
+    .spots .spot-name {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+    .spots .spot-no {
+      color: var(--accent);
+      font-weight: 400;
+      margin-right: 10px;
+    }
+    .spots .yomi {
+      display: block;
+      font-size: 11px;
+      color: var(--ink-soft);
+      letter-spacing: 0.12em;
+      margin: 2px 0 6px;
+    }
+    .spots p {
+      font-size: 14px;
+      margin-bottom: 0;
+      line-height: 1.9;
+    }
+    ol.steps {
+      list-style: none;
+      counter-reset: step;
+      padding: 0;
+    }
+    ol.steps li {
+      counter-increment: step;
+      position: relative;
+      padding: 10px 0 10px 32px;
+      border-bottom: 1px dotted var(--line-dot);
+      font-size: 14px;
+    }
+    ol.steps li:last-child { border-bottom: none; }
+    ol.steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 10px;
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      color: var(--accent);
+    }
     @media (max-width: 540px) {
       .frame { padding: 48px 22px 64px; }
       h1 { font-size: 24px; letter-spacing: 0.05em; }
@@ -299,7 +348,8 @@
   <p class="lead">
     みなさまお疲れさまです。24期のおうです。<br>
     10月25日（日）、太宰府の宝満山（ほうまんざん）に登ります。<br>
-    今回はお声がけをいただいた登山に、<strong>山頂バナナから数名で合流</strong>する形です。全体で13名前後、車に乗り合わせて向かいます。竈門神社（かまどじんじゃ）から石段の続く道を登り、山頂でお弁当を食べてから下山、帰りに太宰府付近で軽く食べて17:00ごろ解散の予定です。
+    今回はお声がけをいただいた登山に、<strong>山頂バナナから数名で合流</strong>する形です。全体で13名前後、車に乗り合わせて向かいます。竈門神社（かまどじんじゃ）から石段の続く道を登り、山頂でお弁当を食べてから下山、帰りに太宰府付近で軽く食べて17:00ごろ解散の予定です。<br>
+    宝満山は古くから信仰の山で、山伏が修行した修験道（しゅげんどう）の霊峰でもあります。2013年には、鳥海山・富士山に続く全国3例目の山として国の史跡に指定されました。道中の見どころは「三、」にまとめています。
   </p>
 
   <div class="summary">
@@ -335,25 +385,69 @@
   <h2><span class="num">一、</span>集合</h2>
   <table>
     <tr>
-      <th>竈門神社駐車場</th>
+      <th>竈門神社下宮<br>参拝者第一駐車場</th>
       <td>
         <span class="meet-time">9:00</span>
-        <span class="meet-sub">全員ここで集合 ／ <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%AE%9D%E6%BA%80%E5%AE%AE+%E7%AB%88%E9%96%80%E7%A5%9E%E7%A4%BE+%E9%A7%90%E8%BB%8A%E5%A0%B4" target="_blank" rel="noopener">Google Maps</a></span>
+        <span class="meet-sub">全員ここで集合 ／ <a href="https://www.google.com/maps/place/%E5%AE%9D%E6%BA%80%E5%B1%B1+%E7%AB%88%E9%96%80%E7%A5%9E%E7%A4%BE%E4%B8%8B%E5%AE%AE%E5%8F%82%E6%8B%9D%E8%80%85%E7%AC%AC%E4%B8%80%E9%A7%90%E8%BB%8A%E5%A0%B4/@33.5287456,130.5492054,18z/data=!4m10!1m2!2m1!1z5a6d5rqA5a6uIOeriOmWgOelnuekviDpp5Dou4rloLQ!3m6!1s0x35419b7cd3fb2077:0x4ebf437af16fdc61!8m2!3d33.5285578!4d130.5504714!15sCiDlrp3muoDlrq4g56uI6ZaA56We56S-IOmnkOi7iuWgtJIBC3BhcmtpbmdfbG904AEA!16s%2Fg%2F11c1fp5rrt?entry=ttu&amp;g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Google Maps</a></span>
       </td>
     </tr>
   </table>
   <figure class="map">
     <img src="map.jpg" alt="集合場所の地図。竈門神社の一の鳥居の東、神社下の駐車場あたりを赤い丸で示している" width="1000" height="607">
-    <figcaption>赤丸のあたりが集合場所（竈門神社下の駐車場）。地図：Google マップ</figcaption>
+    <figcaption>赤丸のあたりが集合場所（竈門神社下宮参拝者第一駐車場）。左下の「人と木」が下山後に寄るお店。地図：Google マップ</figcaption>
   </figure>
   <p class="note">
-    <strong>竈門神社の有料駐車場は約100台・1回400円</strong>（太宰府市の案内による）。カーナビは「宝満宮 竈門神社」（太宰府市内山883）で検索してください。九州自動車道 太宰府ICから約8kmです。<br>
+    Google マップで<strong>「宝満山 竈門神社下宮参拝者第一駐車場」</strong>を目的地にしてください（上の「Google Maps」から開けます）。竈門神社の駐車場は約100台・1回400円です（太宰府市の案内による）。九州自動車道 太宰府ICから約8kmです。<br>
     駐車場とトイレは登山口の竈門神社にあります。山頂にトイレはありませんので、出発前に済ませておきましょう。
   </p>
 </section>
 
 <section>
-  <h2><span class="num">二、</span>参加者・配車</h2>
+  <h2><span class="num">二、</span>駐車場から登山口まで（徒歩）</h2>
+  <p>登山口は竈門神社の境内を抜けた先にあります。当日は全員そろって歩きます。</p>
+  <ol class="steps">
+    <li>駐車場から竈門神社（下宮）の境内へ。出発前に参拝とトイレを済ませます</li>
+    <li>境内を抜け、汐井川沿いに式部稲荷社を通ります。汐井川は、昔の登山者がみそぎをした川です</li>
+    <li>急な登り道を抜けると車道に出ます。車道を300mほど歩くと山道との分かれ道</li>
+    <li>車道を横切って山道へ。左手に鉄塔が見えたら、そこが内山林道の終点です</li>
+    <li>その先が一の鳥居（二合目）。ここから石段が本格的に始まります</li>
+  </ol>
+  <p class="note">太宰府市の登山リーフレット（正面登山道 案内）の道順に沿っています。</p>
+</section>
+
+<section>
+  <h2><span class="num">三、</span>道すじの見どころ</h2>
+  <ul class="spots">
+    <li>
+      <span class="spot-name"><span class="spot-no">1</span>宝満宮 竈門神社（下宮）</span>
+      <span class="yomi">ほうまんぐう かまどじんじゃ（げぐう）</span>
+      <p>神武天皇の母・玉依姫命（たまよりひめのみこと）を祀る、縁結びの神様として知られる神社。大宰府政庁の北東、つまり鬼門を守る場所にあるとされます。山頂の「上宮」に対して、麓のこちらが「下宮」です。</p>
+    </li>
+    <li>
+      <span class="spot-name"><span class="spot-no">2</span>一の鳥居</span>
+      <span class="yomi">いちのとりい</span>
+      <p>二合目、内山林道の終点の先に立つ鳥居。ここをくぐると石段の道に入り、休堂を過ぎたあたりから勾配がきつくなります。春はシャクナゲが咲く区間です。</p>
+    </li>
+    <li>
+      <span class="spot-name"><span class="spot-no">3</span>百段ガンギ</span>
+      <span class="yomi">ひゃくだんがんぎ</span>
+      <p>「ガンギ（雁木）」は石段のこと。急斜面に自然石を組んだ石段が続き、一段ずつ高さも形も違います。登ってきた体力を最後に奪う、コース最大の難所。数えながら登るのもおすすめです。</p>
+    </li>
+    <li>
+      <span class="spot-name"><span class="spot-no">4</span>中宮跡</span>
+      <span class="yomi">ちゅうぐうあと</span>
+      <p>明治より前まで「中宮」の社があった広場。山頂の上宮と麓の下宮のあいだにあたります。百段ガンギを越え、芭蕉の句碑を過ぎるとここに着きます。山頂まではもうひと登りです。</p>
+    </li>
+    <li>
+      <span class="spot-name"><span class="spot-no">5</span>宝満山山頂・上宮</span>
+      <span class="yomi">ほうまんざん さんちょう・じょうぐう</span>
+      <p>巨岩の間を縫って登ると、大きな岩の上に白い上宮の社が建ち、360°の眺めが広がります。頂上付近には玉依姫命の伝承にまつわる馬蹄石や竈門岩も。古い山の名「竈門山（かまどやま）」は、山の姿がかまどの形に見え、絶えずかかる雲や霧が煮炊きの煙のように見えたことに由来するとされます。ここでお弁当です。</p>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="num">四、</span>参加者・配車</h2>
   <p>全体で<strong>13名前後</strong>です。各車ごとに出発地から乗り合わせて、竈門神社駐車場に向かいます。</p>
   <table>
     <tr><th>おうの車（城南区発）</th><td>4名。乗る方には、待ち合わせ場所と時刻を<strong>おうからLINEで個別に連絡</strong>します</td></tr>
@@ -363,24 +457,31 @@
 </section>
 
 <section>
-  <h2><span class="num">三、</span>行程</h2>
+  <h2><span class="num">五、</span>行程</h2>
   <table>
     <tr><td class="time-col">8:00頃（仮）</td><td>各車ごとに待ち合わせ・出発</td></tr>
     <tr><td class="time-col">9:00</td><td>竈門神社駐車場 集合・登山開始</td></tr>
     <tr><td class="time-col">12:00頃</td><td>宝満山山頂 到着・昼食（お弁当）</td></tr>
     <tr><td class="time-col">昼食後</td><td>下山開始</td></tr>
     <tr><td class="time-col">15:00頃</td><td>竈門神社駐車場 到着</td></tr>
-    <tr><td class="time-col">16:00頃</td><td>太宰府付近で軽食</td></tr>
+    <tr><td class="time-col">下山後</td><td>カフェレストラン「人と木（ひととき）」で補給</td></tr>
     <tr><td class="time-col">17:00頃</td><td>解散</td></tr>
   </table>
   <p class="note">
     ※ 行動時間は昼食・休憩を含めた9:00〜15:00の目安です。ペース・天候により前後します。<br>
     <strong>昼食は山頂で食べます。お弁当を持参してください。</strong>
   </p>
+  <div class="col-head" style="margin-top: 28px;">下山後の補給：Cafe restaurant 人と木（ひととき）</div>
+  <table>
+    <tr><th>場所</th><td>太宰府市内山609-9（竈門神社の近く。集合場所の地図の左下）／ <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%AB%E3%83%95%E3%82%A7%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E4%BA%BA%E3%81%A8%E6%9C%A8+%E5%A4%AA%E5%AE%B0%E5%BA%9C%E5%B8%82%E5%86%85%E5%B1%B1609-9" target="_blank" rel="noopener">Google Maps</a></td></tr>
+    <tr><th>営業時間</th><td>11:30〜16:00（料理のラストオーダー15:30）・月曜定休</td></tr>
+    <tr><th>お店の案内</th><td><a href="https://www.instagram.com/caferestauranthitotoki/" target="_blank" rel="noopener">Instagram</a></td></tr>
+  </table>
+  <p class="note"><strong>お店は16:00閉店です。</strong>下山が遅れると入れないことがあるので、当日は時間を見ながら動きます。</p>
 </section>
 
 <section>
-  <h2><span class="num">四、</span>持ち物</h2>
+  <h2><span class="num">六、</span>持ち物</h2>
   <div class="two-cols">
     <div>
       <div class="col-head">主催側の案内（各自持参）</div>
@@ -409,7 +510,7 @@
 </section>
 
 <section>
-  <h2><span class="num">五、</span>雨天時の判断</h2>
+  <h2><span class="num">七、</span>雨天時の判断</h2>
   <table>
     <tr><th>判断時刻</th><td>前日（10/24・土）の午前まで</td></tr>
     <tr><th>判断方法</th><td>翌日の天気予報を確認して、登るかどうかを決めます</td></tr>
@@ -418,10 +519,10 @@
 </section>
 
 <section>
-  <h2><span class="num">六、</span>連絡先・その他</h2>
+  <h2><span class="num">八、</span>連絡先・その他</h2>
   <table>
     <tr><th>山頂バナナの窓口</th><td>おう（LINE）</td></tr>
-    <tr><th>集合場所</th><td>福岡県太宰府市内山 竈門神社駐車場</td></tr>
+    <tr><th>集合場所</th><td>福岡県太宰府市内山 竈門神社下宮参拝者第一駐車場</td></tr>
   </table>
   <p class="note">
     <strong>体調や持病で気になることがあれば、事前におうまで。</strong>緊急時に共有するためです。
@@ -429,11 +530,14 @@
 </section>
 
 <section>
-  <h2><span class="num">七、</span>参考</h2>
+  <h2><span class="num">九、</span>参考</h2>
   <ul>
     <li><a href="https://www.city.dazaifu.lg.jp/site/kanko/15851.html" target="_blank" rel="noopener">太宰府の霊峰 宝満山登山にチャレンジ！｜太宰府市</a></li>
     <li><a href="https://www.city.dazaifu.lg.jp/uploaded/attachment/7836.pdf" target="_blank" rel="noopener">宝満山 登山案内リーフレット（正面登山道の地図）｜太宰府市</a></li>
+    <li><a href="https://kamadojinja.or.jp/mt_houmanzan/" target="_blank" rel="noopener">宝満山について｜宝満宮 竈門神社</a></li>
+    <li><a href="https://www.city.dazaifu.lg.jp/site/kanko/11412.html" target="_blank" rel="noopener">竈門神社｜太宰府市</a></li>
     <li><a href="https://kamadojinja.or.jp/access/" target="_blank" rel="noopener">交通アクセス｜宝満宮 竈門神社</a></li>
+    <li><a href="https://www.instagram.com/caferestauranthitotoki/" target="_blank" rel="noopener">Cafe restaurant 人と木（Instagram）</a></li>
   </ul>
 </section>
 
