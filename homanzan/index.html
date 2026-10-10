@@ -319,7 +319,93 @@
       font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
       color: var(--accent);
     }
+    .forecast {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      margin: 8px 0 20px;
+    }
+    .forecast > div {
+      padding: 20px 8px;
+      text-align: center;
+    }
+    .forecast > div + div { border-left: 1px solid var(--line); }
+    .forecast .label {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: var(--ink-soft);
+      margin-bottom: 6px;
+    }
+    .forecast .value {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .forecast .sub {
+      display: block;
+      font-size: 11px;
+      color: var(--ink-soft);
+      margin-top: 4px;
+    }
+    .outfit {
+      margin: 24px 0 8px;
+      background: #FBFAF6;
+      border: 1px solid var(--line);
+    }
+    .outfit img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .outfit-cols {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--line);
+    }
+    .outfit-cols > div {
+      padding: 14px 12px 16px;
+      font-size: 13px;
+      line-height: 1.75;
+    }
+    .outfit-cols > div + div { border-left: 1px solid var(--line); }
+    .outfit-cols .when {
+      display: block;
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .outfit-cols .temp {
+      display: block;
+      font-size: 11px;
+      color: var(--accent);
+      margin-bottom: 6px;
+      letter-spacing: 0.05em;
+    }
+    .video {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000;
+      margin: 8px 0 6px;
+    }
+    .video iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-title {
+      font-size: 13px;
+      color: var(--ink-soft);
+      margin-bottom: 28px;
+    }
     @media (max-width: 540px) {
+      .outfit-cols > div { padding: 12px 8px 14px; font-size: 12px; }
+      .outfit-cols .when { font-size: 13px; }
       .frame { padding: 48px 22px 64px; }
       h1 { font-size: 24px; letter-spacing: 0.05em; }
       .two-cols { grid-template-columns: 1fr; gap: 28px; }
@@ -510,7 +596,55 @@
 </section>
 
 <section>
-  <h2><span class="num">七、</span>雨天時の判断</h2>
+  <h2><span class="num">七、</span>当日の天気と服装</h2>
+  <p>10/25はまだ天気予報の範囲外のため、<strong>平年の気温と気象庁の1か月予報からの見立て</strong>です。</p>
+  <div class="forecast">
+    <div>
+      <span class="label">麓・朝9時ごろ</span>
+      <span class="value">16〜19℃</span>
+      <span class="sub">竈門神社 標高約150m</span>
+    </div>
+    <div>
+      <span class="label">山頂・昼ごろ</span>
+      <span class="value">15〜18℃</span>
+      <span class="sub">風があると体感はもっと低め</span>
+    </div>
+  </div>
+  <p class="note">
+    <strong>空模様：晴れの日が多い見込み。気温は平年より高めの傾向です。</strong>気象庁の1か月予報（10月8日発表）では、10月24日からの週は「気温が平年より高い確率60%」、期間を通じて「平年に比べ晴れの日が多い」とされています。<br>
+    福岡の10月25日の平年気温は最高22.0℃・最低14.3℃。山頂は駐車場より約680m高く、気温はおよそ4℃下がります。日の入りは17:34です。<br>
+    週間予報に10/25が入るのは10/18ごろ。前日に主催側から天気の判断が届きます。
+  </p>
+
+  <figure class="outfit">
+    <img src="fukusou.jpg" alt="同じ人が三段階で重ね着していくイラスト。左は長袖シャツとズボンで歩いている姿、中央はシャツの上にフリースを着て立っている姿、右はさらに雨具の上着と手袋を着けて山頂でお弁当を食べている姿" width="1200" height="800" loading="lazy">
+    <div class="outfit-cols">
+      <div>
+        <span class="when">登り</span>
+        <span class="temp">汗ばむ・約16〜19℃</span>
+        速乾性の長袖（または半袖＋アームカバー）、動きやすい長ズボン、帽子。少し肌寒いくらいで歩き始めるのがコツ。
+      </div>
+      <div>
+        <span class="when">休憩</span>
+        <span class="temp">止まると冷える</span>
+        薄手のフリースや薄手のダウンをさっと羽織る。汗が冷える前に着るのがポイント。
+      </div>
+      <div>
+        <span class="when">山頂でお弁当</span>
+        <span class="temp">約15〜18℃＋風</span>
+        フリースの上に雨具の上着（風よけ）。手袋もあると安心。座って食べる時間がいちばん冷えます。
+      </div>
+    </div>
+  </figure>
+  <ul>
+    <li><strong>綿のシャツ・ジーンズは避ける</strong>：汗で濡れると乾かず、山頂で体が冷えます</li>
+    <li><strong>足元は滑りにくい靴底のもの</strong>：石段が続き、下りで足を取られやすい道です</li>
+    <li><strong>下山後の着替え（Tシャツ1枚）</strong>：人と木に寄る前に、車で着替えると快適です</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="num">八、</span>雨天時の判断</h2>
   <table>
     <tr><th>判断時刻</th><td>前日（10/24・土）の午前まで</td></tr>
     <tr><th>判断方法</th><td>翌日の天気予報を確認して、登るかどうかを決めます</td></tr>
@@ -519,7 +653,7 @@
 </section>
 
 <section>
-  <h2><span class="num">八、</span>連絡先・その他</h2>
+  <h2><span class="num">九、</span>連絡先・その他</h2>
   <table>
     <tr><th>山頂バナナの窓口</th><td>おう（LINE）</td></tr>
     <tr><th>集合場所</th><td>福岡県太宰府市内山 竈門神社下宮参拝者第一駐車場</td></tr>
@@ -530,7 +664,20 @@
 </section>
 
 <section>
-  <h2><span class="num">九、</span>参考</h2>
+  <h2><span class="num">十、</span>山頂バナナ テーマ・ソング</h2>
+  <p>当日に向けて、車の中で予習しておきましょう。</p>
+  <div class="video">
+    <iframe src="https://www.youtube-nocookie.com/embed/8_PWWNS53_o" title="山頂バナナクラブ テーマ・ソング" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+  </div>
+  <p class="video-title">山頂バナナクラブ テーマ・ソング ／ <a href="https://youtu.be/8_PWWNS53_o" target="_blank" rel="noopener">YouTubeで開く</a></p>
+  <div class="video">
+    <iframe src="https://www.youtube-nocookie.com/embed/Nu9BH_EW-Kc" title="山頂バナナクラブ テーマ・ソング２" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+  </div>
+  <p class="video-title">山頂バナナクラブ テーマ・ソング２ ／ <a href="https://youtu.be/Nu9BH_EW-Kc" target="_blank" rel="noopener">YouTubeで開く</a></p>
+</section>
+
+<section>
+  <h2><span class="num">十一、</span>参考</h2>
   <ul>
     <li><a href="https://www.city.dazaifu.lg.jp/site/kanko/15851.html" target="_blank" rel="noopener">太宰府の霊峰 宝満山登山にチャレンジ！｜太宰府市</a></li>
     <li><a href="https://www.city.dazaifu.lg.jp/uploaded/attachment/7836.pdf" target="_blank" rel="noopener">宝満山 登山案内リーフレット（正面登山道の地図）｜太宰府市</a></li>
@@ -538,6 +685,8 @@
     <li><a href="https://www.city.dazaifu.lg.jp/site/kanko/11412.html" target="_blank" rel="noopener">竈門神社｜太宰府市</a></li>
     <li><a href="https://kamadojinja.or.jp/access/" target="_blank" rel="noopener">交通アクセス｜宝満宮 竈門神社</a></li>
     <li><a href="https://www.instagram.com/caferestauranthitotoki/" target="_blank" rel="noopener">Cafe restaurant 人と木（Instagram）</a></li>
+    <li><a href="https://tenki.jp/long/10900/" target="_blank" rel="noopener">九州北部の1か月予報（気象庁発表）｜tenki.jp</a></li>
+    <li><a href="https://www.data.jma.go.jp/stats/etrn/view/nml_sfc_d.php?prec_no=82&amp;block_no=47807&amp;year=&amp;month=10&amp;day=&amp;view=" target="_blank" rel="noopener">福岡 10月の日別平年値｜気象庁</a></li>
   </ul>
 </section>
 
