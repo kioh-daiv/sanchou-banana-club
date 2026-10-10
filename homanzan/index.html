@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>山頂バナナクラブ｜2026年10月25日 宝満山</title>
+  <meta name="description" content="2026年10月25日（日）宝満山 登山案内 — 山頂バナナクラブ">
+  <style>
+    :root {
+      --paper: #FBFAF5;
+      --ink: #1F1B16;
+      --ink-soft: #6A6258;
+      --line: #DDD7C6;
+      --line-dot: #C8C0AC;
+      --accent: #A88323;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic Medium", "Yu Gothic", sans-serif;
+      font-weight: 400;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.9;
+      letter-spacing: 0.03em;
+      -webkit-font-smoothing: antialiased;
+    }
+    .mincho {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "MS Mincho", serif;
+    }
+    .frame {
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 72px 32px 96px;
+    }
+    .club-mark {
+      font-size: 11px;
+      letter-spacing: 0.4em;
+      color: var(--accent);
+      text-align: center;
+      margin-bottom: 56px;
+      padding-bottom: 12px;
+    }
+    .club-mark::after {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--accent);
+      margin: 16px auto 0;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 56px;
+      margin-bottom: 56px;
+      border-bottom: 1px solid var(--ink);
+    }
+    h1 {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 1.5;
+      letter-spacing: 0.08em;
+      margin-bottom: 24px;
+    }
+    .date {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-size: 17px;
+      color: var(--ink-soft);
+      letter-spacing: 0.15em;
+    }
+    .subtitle {
+      font-size: 12px;
+      color: var(--ink-soft);
+      margin-top: 10px;
+      letter-spacing: 0.1em;
+    }
+    section { margin: 56px 0; }
+    h2 {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      letter-spacing: 0.1em;
+      color: var(--ink);
+    }
+    h2 .num {
+      color: var(--accent);
+      margin-right: 14px;
+      font-weight: 400;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--ink);
+      margin-top: 10px;
+    }
+    p {
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+    .lead {
+      font-size: 15px;
+      line-height: 2.05;
+      color: var(--ink);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin: 8px 0;
+    }
+    th, td {
+      padding: 14px 4px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+    }
+    th {
+      font-weight: 500;
+      color: var(--ink-soft);
+      width: 40%;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+    .time-col {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-variant-numeric: tabular-nums;
+      color: var(--accent);
+      white-space: nowrap;
+      width: 110px;
+      font-size: 14px;
+    }
+    .meet-time {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      display: inline-block;
+      margin-right: 12px;
+    }
+    .meet-sub {
+      display: block;
+      font-size: 12px;
+      color: var(--ink-soft);
+      margin-top: 4px;
+      letter-spacing: 0.03em;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 10px 0;
+      border-bottom: 1px dotted var(--line-dot);
+      font-size: 14px;
+    }
+    ul li:last-child { border-bottom: none; }
+    .two-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .col-head {
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--ink-soft);
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+    .note {
+      font-size: 13px;
+      color: var(--ink-soft);
+      padding: 18px 0;
+      margin: 24px 0;
+      border-top: 1px dotted var(--line-dot);
+      border-bottom: 1px dotted var(--line-dot);
+      line-height: 1.9;
+    }
+    .note strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1px;
+      transition: border-color 0.15s;
+    }
+    a:hover { border-bottom-color: var(--accent); }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      padding: 28px 0;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      margin: 32px 0;
+    }
+    .summary > div {
+      text-align: center;
+      border-right: 1px solid var(--line);
+    }
+    .summary > div:last-child { border-right: none; }
+    .summary .label {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      color: var(--ink-soft);
+      margin-bottom: 10px;
+    }
+    .summary .value {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-size: 19px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    .summary .unit {
+      font-size: 11px;
+      color: var(--ink-soft);
+      font-weight: 400;
+      margin-left: 1px;
+    }
+    .route {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+      font-size: 14px;
+      line-height: 2.1;
+      padding: 24px 28px;
+      background: white;
+      border: 1px solid var(--line);
+      letter-spacing: 0.05em;
+      color: var(--ink);
+    }
+    .route .head {
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 8px;
+      font-family: -apple-system, "Hiragino Sans", sans-serif;
+    }
+    footer {
+      text-align: center;
+      margin-top: 96px;
+      padding-top: 40px;
+      border-top: 1px solid var(--line);
+      font-size: 10px;
+      color: var(--ink-soft);
+      letter-spacing: 0.4em;
+    }
+    .map {
+      margin: 20px 0 8px;
+      border: 1px solid var(--line);
+      background: white;
+    }
+    .map img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .map figcaption {
+      font-size: 11px;
+      color: var(--ink-soft);
+      padding: 8px 12px;
+      border-top: 1px solid var(--line);
+      letter-spacing: 0.03em;
+    }
+    @media (max-width: 540px) {
+      .frame { padding: 48px 22px 64px; }
+      h1 { font-size: 24px; letter-spacing: 0.05em; }
+      .two-cols { grid-template-columns: 1fr; gap: 28px; }
+      .summary { grid-template-columns: 1fr 1fr; }
+      .summary > div { padding: 14px 0; border-right: none; border-bottom: 1px solid var(--line); }
+      .summary > div:nth-child(2) { border-right: 1px solid var(--line); }
+      .summary > div:nth-child(odd) { border-right: 1px solid var(--line); }
+      .summary > div:nth-last-child(-n+2) { border-bottom: none; }
+    }
+  </style>
+
+</head>
+<body>
+
+<div class="frame">
+
+<div class="club-mark">山頂バナナクラブ</div>
+
+<header>
+  <h1>宝満山 登山のご案内</h1>
+  <p class="date">二〇二六年 十月二十五日（日）</p>
+  <p class="subtitle">福岡県太宰府市・宝満山 829.6m ／ 竈門神社駐車場 9:00集合</p>
+</header>
+
+<section>
+  <p class="lead">
+    みなさまお疲れさまです。24期のおうです。<br>
+    10月25日（日）、太宰府の宝満山（ほうまんざん）に登ります。<br>
+    今回はお声がけをいただいた登山に、<strong>山頂バナナから数名で合流</strong>する形です。全体で13名前後、車に乗り合わせて向かいます。竈門神社（かまどじんじゃ）から石段の続く道を登り、山頂でお弁当を食べてから下山、帰りに太宰府付近で軽く食べて17:00ごろ解散の予定です。
+  </p>
+
+  <div class="summary">
+    <div>
+      <span class="label">標高</span>
+      <span class="value">829.6<span class="unit">m</span></span>
+    </div>
+    <div>
+      <span class="label">距離（往復）</span>
+      <span class="value">約5<span class="unit">km</span></span>
+    </div>
+    <div>
+      <span class="label">登り（目安）</span>
+      <span class="value">約2<span class="unit">h</span></span>
+    </div>
+    <div>
+      <span class="label">行動時間</span>
+      <span class="value">約6<span class="unit">h</span></span>
+    </div>
+  </div>
+
+  <div class="route">
+    <span class="head">ROUTE（竈門神社からの正面登山道・代表的な道すじ）</span>
+    竈門神社 → 一の鳥居 → 百段ガンギ → 中宮跡 → 宝満山山頂（上宮）・昼食 → 下山 → 竈門神社
+  </div>
+  <p class="note">
+    ※ 当日のルートは主催側の案内に従います。<br>
+    <strong>宝満山は登り始めから山頂まで石段が続きます。</strong>中でも「百段ガンギ」はコース最大の難所といわれる急な石段で、一段ずつ高さや形が違います。今回は山頂12:00着と、一般的な目安（登り約2時間）よりゆっくりした計画です。自分のペースで登りましょう。
+  </p>
+</section>
+
+<section>
+  <h2><span class="num">一、</span>集合</h2>
+  <table>
+    <tr>
+      <th>竈門神社駐車場</th>
+      <td>
+        <span class="meet-time">9:00</span>
+        <span class="meet-sub">全員ここで集合 ／ <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%AE%9D%E6%BA%80%E5%AE%AE+%E7%AB%88%E9%96%80%E7%A5%9E%E7%A4%BE+%E9%A7%90%E8%BB%8A%E5%A0%B4" target="_blank" rel="noopener">Google Maps</a></span>
+      </td>
+    </tr>
+  </table>
+  <figure class="map">
+    <img src="map.jpg" alt="集合場所の地図。竈門神社の一の鳥居の東、神社下の駐車場あたりを赤い丸で示している" width="1000" height="607">
+    <figcaption>赤丸のあたりが集合場所（竈門神社下の駐車場）。地図：Google マップ</figcaption>
+  </figure>
+  <p class="note">
+    <strong>竈門神社の有料駐車場は約100台・1回400円</strong>（太宰府市の案内による）。カーナビは「宝満宮 竈門神社」（太宰府市内山883）で検索してください。九州自動車道 太宰府ICから約8kmです。<br>
+    駐車場とトイレは登山口の竈門神社にあります。山頂にトイレはありませんので、出発前に済ませておきましょう。
+  </p>
+</section>
+
+<section>
+  <h2><span class="num">二、</span>参加者・配車</h2>
+  <p>全体で<strong>13名前後</strong>です。各車ごとに出発地から乗り合わせて、竈門神社駐車場に向かいます。</p>
+  <table>
+    <tr><th>おうの車（城南区発）</th><td>4名。乗る方には、待ち合わせ場所と時刻を<strong>おうからLINEで個別に連絡</strong>します</td></tr>
+    <tr><th>ほかの車</th><td>各ドライバーの案内に従ってください</td></tr>
+  </table>
+  <p class="note">どの車に乗るかわからない方、相乗りが必要になった方は、LINEにておうまでご連絡ください。</p>
+</section>
+
+<section>
+  <h2><span class="num">三、</span>行程</h2>
+  <table>
+    <tr><td class="time-col">8:00頃（仮）</td><td>各車ごとに待ち合わせ・出発</td></tr>
+    <tr><td class="time-col">9:00</td><td>竈門神社駐車場 集合・登山開始</td></tr>
+    <tr><td class="time-col">12:00頃</td><td>宝満山山頂 到着・昼食（お弁当）</td></tr>
+    <tr><td class="time-col">昼食後</td><td>下山開始</td></tr>
+    <tr><td class="time-col">15:00頃</td><td>竈門神社駐車場 到着</td></tr>
+    <tr><td class="time-col">16:00頃</td><td>太宰府付近で軽食</td></tr>
+    <tr><td class="time-col">17:00頃</td><td>解散</td></tr>
+  </table>
+  <p class="note">
+    ※ 行動時間は昼食・休憩を含めた9:00〜15:00の目安です。ペース・天候により前後します。<br>
+    <strong>昼食は山頂で食べます。お弁当を持参してください。</strong>
+  </p>
+</section>
+
+<section>
+  <h2><span class="num">四、</span>持ち物</h2>
+  <div class="two-cols">
+    <div>
+      <div class="col-head">主催側の案内（各自持参）</div>
+      <ul>
+        <li>お弁当</li>
+        <li>水筒・飲み物</li>
+        <li>軍手・手袋</li>
+        <li>虫よけスプレー</li>
+        <li>日焼け止め</li>
+      </ul>
+    </div>
+    <div>
+      <div class="col-head">あると安心</div>
+      <ul>
+        <li>歩き慣れた靴（登山靴・トレッキングシューズ）</li>
+        <li>ザック（両手が空くもの）</li>
+        <li>雨具</li>
+        <li>上着（10月末の山頂は冷えます）</li>
+        <li>行動食・おやつ</li>
+        <li>タオル・着替え</li>
+        <li>健康保険証（コピー可）</li>
+        <li>ゴミ袋</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">五、</span>雨天時の判断</h2>
+  <table>
+    <tr><th>判断時刻</th><td>前日（10/24・土）の午前まで</td></tr>
+    <tr><th>判断方法</th><td>翌日の天気予報を確認して、登るかどうかを決めます</td></tr>
+    <tr><th>連絡</th><td>LINEでお知らせします</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2><span class="num">六、</span>連絡先・その他</h2>
+  <table>
+    <tr><th>山頂バナナの窓口</th><td>おう（LINE）</td></tr>
+    <tr><th>集合場所</th><td>福岡県太宰府市内山 竈門神社駐車場</td></tr>
+  </table>
+  <p class="note">
+    <strong>体調や持病で気になることがあれば、事前におうまで。</strong>緊急時に共有するためです。
+  </p>
+</section>
+
+<section>
+  <h2><span class="num">七、</span>参考</h2>
+  <ul>
+    <li><a href="https://www.city.dazaifu.lg.jp/site/kanko/15851.html" target="_blank" rel="noopener">太宰府の霊峰 宝満山登山にチャレンジ！｜太宰府市</a></li>
+    <li><a href="https://www.city.dazaifu.lg.jp/uploaded/attachment/7836.pdf" target="_blank" rel="noopener">宝満山 登山案内リーフレット（正面登山道の地図）｜太宰府市</a></li>
+    <li><a href="https://kamadojinja.or.jp/access/" target="_blank" rel="noopener">交通アクセス｜宝満宮 竈門神社</a></li>
+  </ul>
+</section>
+
+<footer>
+  山頂バナナクラブ
+</footer>
+
+</div>
+
+</body>
+</html>
